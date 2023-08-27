@@ -34,6 +34,8 @@ h1
 {
     text-align: center;
     align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .div1 h1
 {
@@ -56,6 +58,8 @@ text-align: center;
 .div2 p
 {
     text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .div2 h1
 {
@@ -81,6 +85,8 @@ text-align: center;
 {
     text-align: center;
     align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .div3 h1
 {
@@ -103,6 +109,8 @@ text-align: center;
 .div4 p
 {
     text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .div4 h1
 {
