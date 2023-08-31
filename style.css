@@ -64,9 +64,9 @@ header li img
 .middlebody
 {
     height: 900px;
-    width: auto;
     background-image: url(Street.jpg);
     background-size: cover;
+    width: 100%;
 }
 
 footer
