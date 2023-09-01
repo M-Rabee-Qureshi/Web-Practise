@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Gallery</title>
+    <meta name="description" content="Do you want to build a slider for testimonials? Check out this demo and see how you create with pure CSS only." />
+    <meta name="author" content="Frontendscript" />
+   
+    <link rel="stylesheet" type="text/css" href="testimonial.css" />
+     <!--My Work.(Start)-->
+    <style>
+      @font-face /* Phenomena font */
+{
+    font-family: 'Phenomena';
+    src: url(Fonts/Phenomena/Phenomena-Regular.ttf);
+}
+@font-face  /* memphis font */
+{
+    font-family: 'memphis';
+    src: url(Fonts/Memphis/Memphis\ River.otf);
+}
+@font-face /* Vodan font */
+{
+    font-family: 'Vodan';
+    src: url(Fonts/Vodan/Vodan_Demo.ttf);
+}
+body
+{
+background-color: #1e2c2c;
+background-size: cover;
+}
+header
+{
+background-color: rgb(0, 129, 129);
+height: 80px;
+width: 25%;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+margin-top: 20px;
+margin-bottom: 20px;
+border-radius: 10px;
+outline:5px solid #0d504e;
+margin-left: 35%;
+}
+nav
+{
+
+background-color: #60B0AE;
+height: 80px;
+width: 25%;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+margin-top: 20px;
+margin-bottom: 20px;
+border-radius: 10px;
+outline:5px solid #0d504e;
+margin-left: 35%;
+}
+aside
+{
+background-image: url(pictwo.jpg);
+background-size: cover;
+aspect-ratio: 3/2;
+height: 500px;
+width: 38%;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #009193;
+margin-top: 20px;
+margin-bottom: 20px;
+float: left;
+font-family: 'Phenomena',sans-serif;
+border-radius: 10px;
+}
+article
+{
+background-image: url(picthree.jpg);
+background-size: cover;
+height: 500px;
+width: 60%;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+margin-top: 20px;
+margin-bottom: 20px;
+float: left;
+margin-left: 2%;
+font-family: 'memphis',sans-serif;
+border-radius: 10px;
+}
+
+#one
+{
+background-image: url(picone.jpg);
+aspect-ratio: 3/2;
+background-size: cover;
+height: 800px;
+width: 100%;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+margin-top: 20px;
+margin-bottom: 20px;
+font-family: 'Phenomena',sans-serif;
+font-size: 99px;
+border-radius: 10px;
+}
+
+footer
+{
+background-color: #0e706d;
+height: 80px;
+width: 30%;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+margin-top: 20px;
+border-radius: 50px;
+outline:5px solid #0d504e;
+margin-left: 35%;
+}
+
+footer ul
+{
+    display: inline;
+    padding-left: 45px;
+    position: relatives;
+    text-decoration: none;
+}
+li a
+{
+font-family: 'Vodan',sans-serif;
+color: white;
+padding-left: 15px;
+font-size: 25px;
+text-decoration: none;
+padding: 13px;
+transition: .3s ease;
+}
+
+footer li a:hover
+{
+color: #093b3a;
+background-color: #071d1cc4;
+transition: .3s ease;
+border-radius: 50px;
+}
+
+table
+{
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-spacing: 30px;
+ margin-left: 25%;
+}
+td
+{
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #3a8d8d;
+}
+
+td,tr
+{
+  color: white;
+  border-radius: 10px;
+  width: 50%;
+}
+</style>
+</head>
+<body>
+<header>
+<p style="font-size: 55px; font-family: 'Vodan',sans-serif;"><u>This is header</u></p>
+</header>
+<nav>
+<p style="font-size: 55px; font-family: 'Vodan',sans-serif;"><u>This is Nav.</u></p>
+</nav>
+<aside>
+<p style="font-size: 55px; padding-top: 60%;">This is aside.</p>
+</aside>
+<article>
+<p style="font-size: 80px;">Hi there</p>
+</article> 
+<main id="one">
+This is the main thing
+</main>
+ <!--My Work. (End)-->
+<div class="ScriptTop">
+<div class="rt-container">
+  <div class="col-rt-4" id="float-right">
+        
+  </div>
+
+</div>
+</div>
+
+
+
+<div class="slider">
+<input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+<input type="radio" name="slider" title="slide2" class="slider__nav"/>
+<input type="radio" name="slider" title="slide3" class="slider__nav"/>
+<input type="radio" name="slider" title="slide4" class="slider__nav"/>
+
+
+<div class="slider__inner">
+<div class="slider__contents" style="background-image: url(picone.jpg); background-size: cover;font-family: 'Memphis',sans-serif; font-size: 70px;"><i class="slider__image fa fa-codepen"></i>
+<p class="slider__txt">Hi there!</p>
+</div>
+<div class="slider__contents" style="background-image: url(pictwo.jpg); background-size: cover; font-family: 'Memphis',sans-serif; font-size: 70px;"><i class="slider__image fa fa-newspaper-o"></i>
+
+<p class="slider__txt">here we shall talk about bicycle!</p>
+</div>
+<div class="slider__contents" style="background-image: url(picthree.jpg); background-size: cover ;font-family: 'Memphis',sans-serif; font-size: 70px;"><i class="slider__image fa fa-television"></i>
+
+<p class="slider__txt">They are very beneficial for our health!</p>
+</div>
+<div class="slider__contents" style="background: url(bgtwo.jpg); background-size: cover; font-family: 'Memphis',sans-serif; font-size: 70px;"><i class="slider__image fa fa-diamond"></i>
+<p class="slider__txt">This is the Background Image!</p>
+</div>
+</div>
+</div>
+<table>
+  <tr>
+    <th> Hello Pakistan! </th>
+    <th>Hi there </th>
+  </tr>
+  <tr>
+    <td>Bye</td>
+    <td>Good luck</td>
+  </tr>
+  <tr>
+    <td>I said</td>
+    <td>to you</td>
+  </tr>
+  <tr>
+    <td>sales are very bad</td>
+    <td>okie dokie</td>
+  </tr>
+</table>
+
+<footer>
+<ul>
+<li style="padding-left: 15px;">
+<a href="https://youtube.com">Youtube</a>
+<a href="https://google.com">Google</a>
+<a href="https://creativebooster.net">Creative Booster</a>
+</li>
+</ul>
+</footer>
+<br>
+</body>
+</html>
