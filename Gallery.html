@@ -28,7 +28,7 @@
 }
 body
 {
-background-color: #1e2c2c;
+background: url(bgthree.jpg);
 background-size: cover;
 }
 header
@@ -64,11 +64,11 @@ border-radius: 10px;
 outline:5px solid #0d504e;
 margin-left: 35%;
 }
-aside
+.asider
 {
 background-image: url(pictwo.jpg);
 background-size: cover;
-aspect-ratio: 3/2;
+aspect-ratio: 16/4;
 height: 500px;
 width: 38%;
 text-align: center;
@@ -120,47 +120,6 @@ font-size: 99px;
 border-radius: 10px;
 }
 
-footer
-{
-background-color: #0e706d;
-height: 80px;
-width: 30%;
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-margin-top: 20px;
-border-radius: 50px;
-outline:5px solid #0d504e;
-margin-left: 35%;
-}
-
-footer ul
-{
-    display: inline;
-    padding-left: 45px;
-    position: relatives;
-    text-decoration: none;
-}
-li a
-{
-font-family: 'Vodan',sans-serif;
-color: white;
-padding-left: 15px;
-font-size: 25px;
-text-decoration: none;
-padding: 13px;
-transition: .3s ease;
-}
-
-footer li a:hover
-{
-color: #093b3a;
-background-color: #071d1cc4;
-transition: .3s ease;
-border-radius: 50px;
-}
 
 table
 {
@@ -185,6 +144,141 @@ td,tr
   border-radius: 10px;
   width: 50%;
 }
+/* **********************************************************************
+container Start.
+************************************************************************ */
+.container
+{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.card
+{
+  background: rgba(162,232,216,0.5);
+-webkit-backdrop-filter: blur(1px);
+backdrop-filter: blur(1px);
+height: 500px;
+width: 500px;
+border-radius: 20px;
+}
+.line
+{
+  width: 90%;
+  height: 5px;
+  background-color: lightgreen;
+  margin-left: 5%;
+  border-radius: 50px;
+}
+/* **********************************************************************
+container End.
+************************************************************************ */
+footer
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90px;
+    width: 100%;    
+    }
+.footainer
+{
+    aspect-ratio: 1/1;
+    height: 80px;
+    width: 300px;
+    background-color: aquamarine;
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+    outline: 5px solid teal;
+    margin-top: 20px;
+
+}
+.footainer li
+    {
+    padding-top: 15px;
+    text-decoration: none;
+    font-family: sans-serif;
+   
+    }
+    .footainer li a:hover
+    {
+      background-color: #04837f;
+      padding: 5px;
+      color: beige;
+      border-radius: 10px;
+    }
+   
+.cardstrorer
+    {
+    width:500px ;
+    height:1000px ;
+    margin-top: 5px;
+    }
+.cardblur
+    {
+    background: rgba(162,232,216,0.5);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    height: 400px;
+    width: 200px;
+    border-radius: 20px;
+    float: left;
+    margin: 20px;
+    }
+.cardblur h1
+    {
+    text-align: center;
+    font-family: 'Memphis',sans-serif;
+    }
+    .linebw
+{
+  width: 90%;
+  height: 5px;
+  background-color: lightgreen;
+  margin-left: 5%;
+  border-radius: 50px;
+}
+.lbig::first-letter
+{
+color: black;
+font-size: 40px;
+padding-right: 5px;
+
+float: left;
+line-height: 0.2;
+font-family: georgia;
+padding-bottom: -5px;
+
+}
+.sectioncontainer
+{
+    float: right;
+    width: 800px;
+    height: 1000px;
+    aspect-ratio: 1/1;
+    margin-bottom: 20px;
+}
+.sectioncardblur
+{
+    background: rgba(162,232,216,0.5);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    height: 1000px;
+    width: 800px;
+    border-radius: 100px;
+    float:right;
+    margin: 20px;
+}
+.headtext
+{
+    text-align: center;
+    font-size: 80px;
+}
 </style>
 </head>
 <body>
@@ -194,7 +288,7 @@ td,tr
 <nav>
 <p style="font-size: 55px; font-family: 'Vodan',sans-serif;"><u>This is Nav.</u></p>
 </nav>
-<aside>
+<aside class="asider">
 <p style="font-size: 55px; padding-top: 60%;">This is aside.</p>
 </aside>
 <article>
@@ -257,16 +351,63 @@ This is the main thing
     <td>okie dokie</td>
   </tr>
 </table>
+<div class="container">
+  <div class="card">
+        <h1 style="padding-left: 10px;"><b>This is about!</b></h1>
+        <div class="line">
 
+        </div>
+        <div class="paragraph" style="padding: 10px;">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quo nostrum voluptatum minima et quis, suscipit nemo saepe eveniet sed quos qui earum adipisci consequuntur, fugiat officiis dolores dolore delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quisquam perspiciatis distinctio veniam enim eos! Accusantium ipsam quis ex delectus ullam sunt numquam totam sit vitae aut, dolorum, aperiam fuga!</p> 
+          <h2 style="text-align: center;">My Social media Link</h2>
+        </div>
+  </div>
+
+</div>
+<section class="sectioncontainer">
+  <div  class="sectioncardblur">
+      <h1 class="headtext">Hi There</h1>
+      <div class="linebw"></div>
+   <div class="lbig"><p style="padding: 10px;">L  orem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nesciunt fuga, ab nam culpa accusamus laborum eius excepturi delectus dolor, tempore architecto asperiores maxime! Voluptatibus corporis odit eius magnam totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et sed sunt modi fugiat dolores corrupti doloribus, adipisci cupiditate culpa possimus aspernatur earum cumque soluta illum veniam? Inventore, quam rem!orem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nesciunt fuga, ab nam culpa accusamus laborum eius excepturi delectus dolor, tempore architecto asperiores maxime! Voluptatibus corporis odit eius magnam totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et sed sunt modi fugiat dolores corrupti doloribus, adipisci cupiditate culpa possimus aspernatur earum cumque soluta illum veniam? Inventore, quam rem!orem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nesciunt fuga, ab nam culpa accusamus laborum eius excepturi delectus dolor, tempore architecto asperiores maxime! Voluptatibus corporis odit eius magnam totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et sed sunt modi fugiat dolores corrupti doloribus, adipisci cupiditate culpa possimus aspernatur earum cumque soluta illum veniam? Inventore, quam rem!</p></div>
+  </div>
+</section>
+
+<aside class="cardstrorer">
+<div class="cardstrorer">
+  <div class="cardblur">
+   <h1>Heelo!</h1>
+   <div class="linebw"></div>
+   <div class="lbig"><p style="padding: 10px;">L  orem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nesciunt fuga, ab nam culpa accusamus laborum eius excepturi delectus dolor, tempore architecto asperiores maxime! Voluptatibus corporis odit eius magnam totam!</p></div>
+  </div>
+  <div class="cardblur">
+      <h1>Hello!</h1>
+      <div class="linebw"></div>
+   <div class="lbig"><p style="padding: 10px;">L  orem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nesciunt fuga, ab nam culpa accusamus laborum eius excepturi delectus dolor, tempore architecto asperiores maxime! Voluptatibus corporis odit eius magnam totam!</p></div>
+  </div> 
+  <div class="cardblur">
+      <h1>Hi!</h1>
+      <div class="linebw"></div>
+   <div class="lbig"><p style="padding: 10px;">L  orem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nesciunt fuga, ab nam culpa accusamus laborum eius excepturi delectus dolor, tempore architecto asperiores maxime! Voluptatibus corporis odit eius magnam totam!</p></div>
+  </div>
+  <div class="cardblur">
+         <h1>there!</h1>
+         <div class="linebw"></div>
+   <div class="lbig"><p style="padding: 10px;">L  orem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nesciunt fuga, ab nam culpa accusamus laborum eius excepturi delectus dolor, tempore architecto asperiores maxime! Voluptatibus corporis odit eius magnam totam!</p></div>
+  </div> 
+
+</div>
+</aside>
 <footer>
-<ul>
-<li style="padding-left: 15px;">
-<a href="https://youtube.com">Youtube</a>
-<a href="https://google.com">Google</a>
-<a href="https://creativebooster.net">Creative Booster</a>
-</li>
+  <div class="footainer">
+<ul style="text-decoration: none; list-style: none; padding-inline-start: 0; gap: 10px;">
+  <li>
+  <a href="https://youtube.com" style=" color: rgb(7, 48, 46); text-decoration: none;">Youtube</a>
+  <a style="padding-left: 10px; color: rgb(7, 48, 46); text-decoration: none;" href="https://google.com">Google</a>
+  <a style="padding-left: 10px; color: rgb(7, 48, 46); text-decoration: none;" href="https://creativebooster.net">Creative</a>
+  </li>
 </ul>
-</footer>
+</div>
+</footer>    
 <br>
 </body>
 </html>
